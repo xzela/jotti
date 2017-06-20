@@ -1,0 +1,22 @@
+{
+  "name": "jotti",
+  "version": "0.0.1",
+  "description": "note taking app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzela/jotti.git"
+  },
+  "author": "zeph lafassett <zelafassett@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xzela/jotti/issues"
+  },
+  "homepage": "https://github.com/xzela/jotti#readme",
+  "dependencies": {
+    "electron": "^1.6.11"
+  }
+}
