@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Photon</title>
+		<title>Jotti</title>
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="css/photon.css">
 
 		<!-- Electron Javascript -->
 		<!-- <script src="app.js" charset="utf-8"></script> -->
+		<script>window.$ = window.jQuery = require('./js/vendor/jquery/dist/jquery.min.js');</script>
+		<!-- <script src="js/vendor/jquery/dist/jquery.min.js"></script> -->
+		<script src="js/vendor/markdown-it/dist/markdown-it.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(() => {
+			let md = window.markdownit();
+			$('#source-text').on('change keyup paste', () => {
+				let string = $('#source-text').val();
+				let res = md.render(string);
+				console.log(res);
+				$('#render-markdown').html(res);
+			});
+		});
+		</script>
 	</head>
 	<body>
 		<!-- Wrap your entire app inside .window -->
@@ -31,11 +45,15 @@
 						</ul>
 					</div>
 					<div class="pane">
-						<h1>Welcome to Photon</h1>
-						<p>
-							Thanks for downloading Photon. This is an example HTML page that's linked up to compiled Photon CSS, has the proper meta tags
-							and the HTML structure.
-						</p>
+						<h1> Test Markdown</h1>
+							<div class="form-group">
+								<label>Description</label>
+								<textarea id="source-text" class="form-control" rows="3"></textarea>
+	 						</div>
+							<div class="form-actions">
+								<button id="render-button" class="btn btn-form btn-primary">Render</button>
+							</div>
+						<div id="render-markdown"></div>
 					</div>
 				</div>
 			</div>

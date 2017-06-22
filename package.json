@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/xzela/jotti#readme",
   "dependencies": {
-    "electron": "^1.6.11"
+    "electron": "^1.6.11",
+    "markdown-it": "^8.3.1"
   }
 }

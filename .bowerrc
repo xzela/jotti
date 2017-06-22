@@ -1,0 +1,22 @@
+{
+  "name": "jotti",
+  "description": "note taking app",
+  "main": "main.js",
+  "authors": [
+    "zeph lafassett <zelafassett@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xzela/jotti",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "directory": "view/js/vendor/",
+  "bower_components": "view/js/vendor/",
+  "dependencies": {
+    "markdown-it": "^8.3.1"
+  }
+}
